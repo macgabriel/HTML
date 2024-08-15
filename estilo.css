@@ -1,0 +1,24 @@
+/* Esse arquivo é o PADRÃO, todas as especificações contidas aqui serão seguidas pelos arquivos que referenciarem esse arquivo */
+body {
+    background-color: lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Identifica onde no site tem texto h3 e já muda-os automaticamente para as especificações abaixo*/
+h3 {
+    color: cadetblue;
+    font-size: 50px;
+}
+/* CRIANDO UMA "CLASSE" CSS, identificada pelo '.' */
+/* Crio a classe 'p1' e todo o texto que a referenciar seguirá as especificações contida nela*/
+.p1 {
+    color: brown;
+    font-size: 10px;
+}
+.p2 {
+    color: peru;
+    font-size: 15px;
+}
+.p3 {
+    color: mediumpurple;
+    font-size: 20px;
+}

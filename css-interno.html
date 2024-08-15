@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Interno</title>
+    <!-- Essa tag fica no HEAD -->
+     <!-- O STYLE CONTÉM A PROGRAMAÇÃO CSS -->
+    <style>
+        /* Muda automaticamente tudo que está no body para as especificações abaixo*/
+        body {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* Já identifica onde no site tem texto h3 e já muda-os automaticamente para as especificações abaixo*/
+        h3 {
+            color: cadetblue;
+            font-size: 50px;
+        }
+        /* CRIANDO UMA "CLASSE" CSS, identificada pelo '.' */
+        /* Crio a classe 'p1' e todo o texto que a referenciar seguirá as especificações contida nela*/
+        .p1 {
+            color: brown;
+            font-size: 10px;
+        }
+        .p2 {
+            color: peru;
+            font-size: 15px;
+        }
+        .p3 {
+            color: mediumpurple;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Utilizando CSS Interno</h3>
+    <p class="p1">Parágrafo 01</p> <!-- Essa linha referencia a classe 'p1', então ela sofrerá as modificações contidas na classe -->
+    <p class="p2">Parágrafo 02</p>
+    <p class="p3">Parágrafo 03</p>
+    <!-- 'target="_new:' Atributo que abre uma nova guia ao clicar no link, em vez dele abrir na mesma guia -->
+    <a class="p2" target="_new" href="https://sp.senac.br">Clique aqui</a>
+</body>
+</html>

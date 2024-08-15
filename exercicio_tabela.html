@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" width="600"> <!-- 'border' é a expessura das bordas da tabela, 'width' é a largura da tabela -->
+        <tr align="center">
+            <th>01</th>
+            <th>02</th>
+            <th>03</th>
+            <th>04</th>
+            <th>05</th>
+        </tr>
+        <tr align="center">
+            <!-- 'rowspan' é usado para mesclar LINHAS e indico o nº de linhas que está mesclando -->
+            <td>Coluna 01</td> <!-- Indico que a linha 1 da 1ª coluna vai ocupar o espaço de 2 linhas -->
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+            <td colspan="2">Coluna 04 e 05</td>
+        </tr>
+        <tr align="center">
+            <td>Coluna 01</td>
+            <td rowspan="2">Coluna 02</td>
+            <td>Coluna 03</td>
+            <td>Coluna 04</td>
+            <td>Coluna 05</td>
+        </tr>
+        <tr align="center">
+            <td>Coluna 01</td> <!-- Como a coluna 02 ja foi mesclada no código acima, eu não preciso declarar ela aqui-->
+            <td>Coluna 03</td>
+            <td colspan="2" rowspan="2">Coluna 04 e 05</td>
+        </tr>
+        <tr align="center">
+            <td>Coluna 01</td>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+            <!-- Como as colunas 04 e 05 já foram mescladas no código acima, elas não são declaradas aqui -->
+        </tr>
+        <tr align="center">
+            <td colspan="2">Coluna 01 e 02</td>
+            <td>Coluna 03</td>
+            <td>Coluna 04</td>
+            <td>Coluna 05</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="2">Coluna 01</td>
+            <td>Coluna 02</td>
+            <td rowspan="2" colspan="2">Coluna 03 e 04</td>
+            <td>Coluna 05</td>
+        </tr>
+        <tr align="center">
+            <td>Coluna 02</td>
+            <td>Coluna 05</td>
+            <!-- Como as colunas 01, 04 e 05 já foram mescladas no código acima, não preciso declarar elas aqui -->
+        </tr>
+    </table>
+</body>
+</html>

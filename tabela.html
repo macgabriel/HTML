@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando tabelas</title>
+</head>
+<body>
+    <h3>Mesclando Colunas</h3>
+    <table border="1" width="500">  <!-- Cria uma tabela com borda de expessua 1-->
+        <tr> <!-- 'tr' cria uma linha -->
+            <th>Título 01</th> <!-- 'th' cria um título -->
+            <th>Título 02</th>
+            <th>Título 03</th>
+        </tr>
+        <tr>
+            <td>Coluna 01</td> <!-- 'td' cria uma coluna -->
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Coluna 01 a 03</td> <!-- 'colspan' é usado para mesclar colunas e indico o nº de colunas que está mesclando -->
+        </tr>
+        <tr>
+            <td>Coluna 01</td> 
+            <td colspan="2">Coluna 02 e 03</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Coluna 01 e 02</td>
+            <td>Coluna 03</td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <h3>Mesclando Linhas</h3>
+    <table border="1" width="600"> <!-- 'border' é a expessura das bordas da tabela, 'width' é a largura da tabela -->
+        <tr>
+            <th>Título 01</th>
+            <th>Título 02</th>
+            <th>Título 03</th>
+            <th>Título 04</th>
+        </tr>
+        <tr>
+            <!-- 'rowspan' é usado para mesclar LINHAS e indico o nº de linhas que está mesclando -->
+            <td rowspan="2">Coluna 01</td> <!-- Indico que a linha 1 da 1ª coluna vai ocupar o espaço de 2 linhas -->
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+            <td>Coluna 04</td>
+        </tr>
+        <tr>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+            <td rowspan="2">Coluna 04</td> <!-- Indico que a linha 4 da 2ª coluna vai ocupar o espaço de 2 linhas -->
+        </tr>
+        <tr> 
+            <td>Coluna 01</td>
+            <td>Coluna 02</td>
+            <td>Coluna 03</td>
+        </tr>
+    </table>
+</body>
+</html>

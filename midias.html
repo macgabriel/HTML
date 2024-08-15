@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Atribuindo imagem ao site</p>
+    <!-- Atributos da tag img WIDTH: largura, HEIGTH: altura. 
+     Opto por usar um ou outro, evitar usar os dois atributos juntos para não deformar a imagem
+     Uso as dimensões em pixel -->
+    <img width="300"  src="https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg" alt="Texto alternativo que aparece quando a imagem não carregar">
+    
+    <p>Atribuindo vídeo ao site</p>
+    <video controls width="300">
+        <!-- Coloco o link da imagem e o tipo (extensão do arquivo dela)-->
+        <source src="flower.webm" type="video/webm">
+    </video> 
+    <p><img width="300"  src="https://s2.glbimg.com/MU_HOBQHWW68xx07g9NWMS4QQwg=/e.glbimg.com/og/ed/f/original/2021/11/30/giphy_1.gif"></p>
+    
+    <!-- Para colocar vídeos do youtube e mapas do google maps eu faço:
+     1. Clico no vídeo no youtube
+     2. Clico em 'compartilhar'
+     3. Clico em incorporar
+     4. Copio o código e colo no meu arquivo html-->
+    <p>Usando vídeo do Youtube</p>
+    <!-- Iframe é um espaço que abrimos dentro do nosso site para acessar conteúdos externos, de outros sites -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xpa8j57Slhs?si=VNqelZsPkzHFdhMH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <p> Usando Gogle Maps</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6593602096705!2d-45.56408642383073!3d-23.03627627916423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf91e696b7da7%3A0x531b7ec4bff84e66!2sSenac%20Taubat%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1723228075387!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
+
+
+
+<!-- Essa tag lê a imagem um texto descritivo da imagem 
+    <figure>
+        <img src="imagem.jpg" alt="Minha Figura">
+        <figcaption>Informações da Figura</figcaption>
+      </figure> 
+      -->
